@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box; 
+}
+html {
+  background-color: #31c639;
+}
+
+.btn-start {
+  font-size: 16px;
+  background-color: #ff1e1e; 
+  color: #fff; 
+  /* border: 2px solid rgb(0, 0, 0);  */
+  border-radius: 15px;
+  margin: 15px auto; 
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.container {
+  width: 800px;
+  height: 850px; 
+  border: 5px solid rgb(250, 250, 250);
+  margin: 15px auto; 
+  background-image: url("./images/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 6px 6px 20px gray;
+  background-attachment: fixed;
+  background-position: center;
+  display: grid; 
+  grid-template-columns: repeat(4, 25%); 
+  grid-template-rows: repeat(6, 1fr); 
+  grid-template-areas: 
+    "door1 door2 door3 door4"
+    "door5 door6 door7 door8"
+    "door9 door10 door11 door12"
+    "door13 door14 door15 door16"
+    "door17 door18 door19 door20"
+    "door21 door22 door23 door24";
+}
+
+.image {
+  background-image: none; 
+  background-size: cover;
+  background-position: center;
+  grid-area: door5;
+}
+
+.text {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: opacity 2.5s; 
+}
